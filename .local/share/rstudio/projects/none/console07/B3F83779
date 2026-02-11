@@ -1,0 +1,16 @@
+]0;~[?2004h(venv) rstudio@jupyter-jingcheng-yang-mail-utoronto-ca---91d7a407:~$ [K(venv) rstudio@jupyter-jingcheng-yang-mail-utoronto-ca---91d7a407:~$ git config --global user.nam e "s[KJamesYJC122[K3"
+[?2004l]0;~[?2004h(venv) rstudio@jupyter-jingcheng-yang-mail-utoronto-ca---91d7a407:~$ [K(venv) rstudio@jupyter-jingcheng-yang-mail-utoronto-ca---91d7a407:~$ [K(venv) rstudio@jupyter-jingcheng-yang-mail-utoronto-ca---91d7a407:~$ git congif -- [Kglobal user.en[Kmail
+[?2004lgit: 'congif' is not a git command. See 'git --help'.
+
+The most similar command is
+	config
+]0;~[?2004h(venv) rstudio@jupyter-jingcheng-yang-mail-utoronto-ca---91d7a407:~$ g[Kgit config --global user,[K.email "jingcheng.yang@Mail.uto ronto.[K[K[K[K[K[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[Kmail.uto ronto.ca"
+[?2004l]0;~[?2004h(venv) rstudio@jupyter-jingcheng-yang-mail-utoronto-ca---91d7a407:~$ s[Kgut ===[K[K[K[K[K[Kit init 
+[?2004lReinitialized existing Git repository in /home/rstudio/.git/
+]0;~[?2004h(venv) rstudio@jupyter-jingcheng-yang-mail-utoronto-ca---91d7a407:~$ git remote add origin [7mhttps://github.com/JamesYJC123/Re[27m[7mg[27m[7mression-Analysis-for-Most-Streamed-Spotify-Songs-in-2023.git[27m[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Chttps://github.com/JamesYJC123/Regression-Analysis-for-Most-Streamed-Spotify-Songs-in-2023.git"
+[?2004l[?2004h> 
+[?2004l[?2004h> [7mgit remote add origin https://github.com/JamesYJC123/Regression-Analysis-for-Most-Streamed-Spotify-Songs-in-2023.git"[27m[C[C[1Pgit remote add origin https://github.com/JamesYJC123/Regression-Analysis-for-Most-Streamed-Spotify-Songs-in-2023.git[Kt"
+[?2004lerror: remote origin already exists.
+]0;~[?2004h(venv) rstudio@jupyter-jingcheng-yang-mail-utoronto-ca---91d7a407:~$ git add.[K . 
+[?2004l
