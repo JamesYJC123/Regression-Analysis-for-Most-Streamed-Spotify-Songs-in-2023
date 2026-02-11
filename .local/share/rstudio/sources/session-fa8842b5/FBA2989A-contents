@@ -1,0 +1,73 @@
+---
+title: "STA302 Tutorial 1"
+author: "Zijin Liu"
+date: "2026-01-29"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## (1) Read dataset
+
+Load the dataset into R
+
+```{r cars}
+nyc_path <- "/Users/zijin/Library/CloudStorage/OneDrive-Personal/Documents/PhD/TA/2025F-2026W/sta302/tut1/nyc.csv"
+nyc <- read.csv(nyc_path, stringsAsFactors = T)
+str(nyc)
+
+```
+
+## (2) Create scatter plots of the response variable against each predictor
+
+
+```{r pressure}
+# op <- par(no.readonly = TRUE)
+par(mfrow = c(2, 2), mar = c(4, 4, 2, 1))
+
+plot(nyc$Food, nyc$Price,
+     xlab = "Food rating (out of 30)", ylab = "Price (USD)",
+     main = "Price vs Food", pch = 19)
+#abline(lm(Price ~ Food, data = nyc), lty = 2)
+
+plot(nyc$Decor, nyc$Price,
+     xlab = "Decor rating (out of 30)", ylab = "Price (USD)",
+     main = "Price vs Decor", pch = 19)
+#abline(lm(Price ~ Decor, data = nyc), lty = 2)
+
+plot(nyc$Service, nyc$Price,
+     xlab = "Service rating (out of 30)", ylab = "Price (USD)",
+     main = "Price vs Service", pch = 19)
+#abline(lm(Price ~ Service, data = nyc), lty = 2)
+
+# East is binary; jitter helps show overlap
+plot(nyc$East, nyc$Price,
+     xlab = "East of Fifth Ave (0=No, 1=Yes)", ylab = "Price (USD)",
+     main = "Price vs East", pch = 19, xaxt = "n")
+axis(1, at = c(0, 1), labels = c("0", "1"))
+
+# par(op)
+
+```
+
+## (3) Fit the regression model and summarize the results
+
+```{r}
+
+fit <- lm(Price ~ Food + Decor + Service + East, data = nyc)
+summary(fit)
+confint(fit)
+
+```
+
+## 4) Produce residual diagnostic plots, arranging multiple plots within a single figure
+
+```{r}
+op <- par(no.readonly = TRUE)
+par(mfrow = c(2, 2))
+plot(fit)  # Produces: Residuals vs Fitted, QQ, Scale-Location, Residuals vs Leverage
+par(op)
+```
+

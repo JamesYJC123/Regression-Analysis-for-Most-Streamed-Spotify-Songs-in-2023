@@ -1,0 +1,5 @@
+"0","#abline(lm(Price ~ Food, data = nyc), lty = 2)"
+"0",""
+"0","plot(nyc$Decor, nyc$Price,"
+"0","     xlab = ""Decor rating (out of 30)"", ylab = ""Price (USD)"","
+"0","     main = ""Price vs Decor"", pch = 19)"

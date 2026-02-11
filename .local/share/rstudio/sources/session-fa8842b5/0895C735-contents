@@ -1,0 +1,5 @@
+mydata <- read.csv("opsd_germany_daily.txt")
+head(mydata)
+dim(mydata)
+row.names(mydata)
+summary(mydata)

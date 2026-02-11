@@ -1,0 +1,6 @@
+"0","# op <- par(no.readonly = TRUE)"
+"0","par(mfrow = c(2, 2), mar = c(4, 4, 2, 1))"
+"0",""
+"0","plot(nyc$Food, nyc$Price,"
+"0","     xlab = ""Food rating (out of 30)"", ylab = ""Price (USD)"","
+"0","     main = ""Price vs Food"", pch = 19)"
