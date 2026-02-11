@@ -1,5 +1,0 @@
-mydata <- read.csv("import.txt")
-head(mydata)
-dim(mydata)
-row.names(mydata)
-summary(mydata)
