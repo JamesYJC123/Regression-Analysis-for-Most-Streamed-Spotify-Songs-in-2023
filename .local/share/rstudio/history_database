@@ -1053,3 +1053,35 @@
 1769804980546:col = "blue")
 1769805610196:moddate <- as.Date(x, format = "%m/%d/%Y")
 1769805610205:mydata <- cbind(moddate,mydata)
+1770796411905:---
+1770796411920:title: "STA302 Tutorial 1"
+1770796421479:knitr::opts_chunk$set(echo = TRUE)
+1770796544079:knitr::opts_chunk$set(echo = TRUE)
+1770796544868:nyc <- read.csv("nyc.csv")
+1770796544901:str(nyc)
+1770796545216:# op <- par(no.readonly = TRUE)
+1770796545227:par(mfrow = c(2, 2), mar = c(4, 4, 2, 1))
+1770796545244:plot(nyc$Food, nyc$Price,
+1770796545255:xlab = "Food rating (out of 30)", ylab = "Price (USD)",
+1770796545268:main = "Price vs Food", pch = 19)
+1770796545311:#abline(lm(Price ~ Food, data = nyc), lty = 2)
+1770796545322:plot(nyc$Decor, nyc$Price,
+1770796545338:xlab = "Decor rating (out of 30)", ylab = "Price (USD)",
+1770796545349:main = "Price vs Decor", pch = 19)
+1770796545400:#abline(lm(Price ~ Decor, data = nyc), lty = 2)
+1770796545412:plot(nyc$Service, nyc$Price,
+1770796545423:xlab = "Service rating (out of 30)", ylab = "Price (USD)",
+1770796545434:main = "Price vs Service", pch = 19)
+1770796545541:#abline(lm(Price ~ Service, data = nyc), lty = 2)
+1770796545552:# East is binary; jitter helps show overlap
+1770796545564:plot(nyc$East, nyc$Price,
+1770796545574:xlab = "East of Fifth Ave (0=No, 1=Yes)", ylab = "Price (USD)",
+1770796545585:main = "Price vs East", pch = 19, xaxt = "n")
+1770796545637:axis(1, at = c(0, 1), labels = c("0", "1"))
+1770796546069:fit <- lm(Price ~ Food + Decor + Service + East, data = nyc)
+1770796546122:print(summary(fit))
+1770796546151:print(confint(fit))
+1770796546464:op <- par(no.readonly = TRUE)
+1770796546524:par(mfrow = c(2, 2))
+1770796546536:plot(fit) # Produces: Residuals vs Fitted, QQ, Scale-Location, Residuals vs Leverage
+1770796546597:par(op)
